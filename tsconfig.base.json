@@ -1,0 +1,25 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "jsx": "react-jsx",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2020", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@nx-code-generator/about": ["modules/about/src/index.tsx"],
+      "@nx-code-generator/home": ["modules/home/src/index.tsx"],
+      "@nx-code-generator/page-generator": ["tools/page-generator/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "page-generator",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "tools/page-generator/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "lint": {
+        "executor": "@nrwl/linter:eslint",
+        "outputs": ["{options.outputFile}"],
+        "options": {
+          "cache": true,
+          "lintFilePatterns": ["tools/page-generator/**/*.{ts,tsx}"]
+        }
+      }
+    },
+    "tags": []
+  }
+}

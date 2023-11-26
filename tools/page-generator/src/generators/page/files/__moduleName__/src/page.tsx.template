@@ -1,0 +1,9 @@
+function <%= helpers.toPascalCase(moduleName) %> () {
+  return <><%= helpers.toPascalCase(moduleName) %> </>
+}
+
+export const route = {
+  path: '/<%= moduleName %>',
+  name: '<%= helpers.toPascalCase(moduleName) %> ',
+  element: <<%= helpers.toPascalCase(moduleName) %>  />
+}

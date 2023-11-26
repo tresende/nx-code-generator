@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "$id": "page",
+  "title": "This plugin generates new page",
+  "type": "object",
+  "cli": "nx",
+  "properties": {
+    "moduleName": {
+      "description": "The name of the module.",
+      "type": "string",
+      "$default": { "$source": "argv", "index": 0 },
+      "x-prompt": "What name would you like to use for the module?",
+      "pattern": "^[a-zA-Z].*$"
+    }
+  },
+  "required": ["moduleName"]
+}

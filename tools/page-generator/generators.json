@@ -1,0 +1,9 @@
+{
+  "generators": {
+    "page": {
+      "factory": "./src/generators/page/generator",
+      "schema": "./src/generators/page/schema.json",
+      "description": "This plugin generates a new page"
+    }
+  }
+}
