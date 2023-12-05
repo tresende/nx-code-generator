@@ -1,8 +1,8 @@
 import { applyChangesToString, ChangeType, Tree } from '@nx/devkit'
 import { ensureTypescript } from '@nx/js/src/utils/typescript/ensure-typescript'
+import { isArrayLiteralExpression, isIdentifier, isVariableStatement, SourceFile } from 'typescript'
 
 import { BaseNormalizedSchema } from './types'
-import { Identifier, isArrayLiteralExpression, isIdentifier, isVariableStatement, SourceFile } from 'typescript'
 
 const ROUTE_FILE_PATH = `apps/web/src/app/routes.tsx`
 const ROUTE_EXPORT_TOKEN = 'routes'

@@ -24,7 +24,7 @@
     "ecmaVersion": 11,
     "sourceType": "module"
   },
-  "plugins": ["react", "react-hooks", "@typescript-eslint", "simple-import-sort"],
+  "plugins": ["react", "react-hooks", "@typescript-eslint", "simple-import-sort", "@nx"],
   "rules": {
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
@@ -33,6 +33,7 @@
     "@typescript-eslint/explicit-module-boundary-types": "off",
     "@typescript-eslint/no-non-null-assertion": "off",
     "react/display-name": "off",
+    "@nx/workspace/no-fc": "error",
     "simple-import-sort/imports": [
       "warn",
       {

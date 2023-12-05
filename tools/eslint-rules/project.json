@@ -1,16 +1,14 @@
 {
-  "name": "modules/home",
+  "name": "eslint-rules",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "modules/home/src",
-  "projectType": "library",
+  "sourceRoot": "tools/eslint-rules",
   "targets": {
     "lint": {
       "executor": "@nx/eslint:lint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["modules/home/**/*.{ts,tsx,js,jsx}"]
+        "lintFilePatterns": ["tools/eslint-rules/**/*.ts"]
       }
     }
-  },
-  "tags": []
+  }
 }

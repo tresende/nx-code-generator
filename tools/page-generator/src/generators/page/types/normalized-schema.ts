@@ -1,3 +1,3 @@
 import { BaseNormalizedSchema } from '../../../lib'
 
-export type NormalizedSchema = {} & BaseNormalizedSchema
+export type NormalizedSchema = BaseNormalizedSchema

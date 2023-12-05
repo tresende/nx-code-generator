@@ -1,3 +1,3 @@
 import { BaseRawSchema } from '../../../lib'
 
-export type RawSchema = {} & BaseRawSchema
+export type RawSchema = BaseRawSchema

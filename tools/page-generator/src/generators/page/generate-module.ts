@@ -1,9 +1,9 @@
 import { generateFiles, Tree } from '@nx/devkit'
 
 import * as lib from '../../lib'
+import { MODULES_DIRECTORY } from '../../lib/constants'
 import { getSourceTemplateDirectory } from './lib/utils'
 import { NormalizedSchema } from './types'
-import { MODULES_DIRECTORY } from '../../lib/constants'
 
 export const generateModule = (tree: Tree, options: NormalizedSchema) => {
   const sourceTemplateDirectory = getSourceTemplateDirectory(tree)

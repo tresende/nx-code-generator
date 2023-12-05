@@ -1,4 +1,5 @@
 import { joinPathFragments } from '@nx/devkit'
+
 import { MODULES_DIRECTORY } from '../constants'
 import { normalizeString } from './normalize-string'
 

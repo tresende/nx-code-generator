@@ -1,1 +1,1 @@
-export const normalizeString = (text: string) => text.toLowerCase().trim();
+export const normalizeString = (text: string) => text.toLowerCase().trim()
