@@ -18,17 +18,18 @@ export const rule = ESLintUtils.RuleCreator(() => __filename)({
   },
   defaultOptions: [],
 
+  //https://astexplorer.net/#/gist/eb17b8eabbaf116359468180b99b2030/35d16d52be024558b65d94af8cb62f3581f23486
   create(context) {
     return {
       'VariableDeclarator > Identifier > TSTypeAnnotation > TSTypeReference > TSQualifiedName': (
         node: TSESTree.TSQualifiedName
       ) => {
-        if (!notAllowed.includes(node.right.name)) return
-
-        context.report({
-          messageId: 'avoid-react-fc',
-          node: node.right
-        })
+        if (notAllowed.includes(node.right.name)) {
+          context.report({
+            messageId: 'avoid-react-fc',
+            node: node.right
+          })
+        }
       }
     }
   }
