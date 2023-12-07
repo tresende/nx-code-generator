@@ -16,8 +16,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@nx-code-generator/about": ["modules/about/src/index.tsx"],
-      "@nx-code-generator/home": ["modules/home/src/index.tsx"],
+      "@nx-code-generator/about": ["modules/about/src/index.ts"],
+      "@nx-code-generator/home": ["modules/home/src/index.ts"],
       "@nx-code-generator/page-generator": ["tools/page-generator/src/index.ts"]
     }
   },

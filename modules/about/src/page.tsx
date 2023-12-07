@@ -1,5 +1,6 @@
 export function About() {
-  return <>About</>
+  console.log('page view: [About]')
+  return <h1>About</h1>
 }
 
 export const route = {

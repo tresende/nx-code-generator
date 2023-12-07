@@ -1,5 +1,6 @@
 function <%= helpers.toPascalCase(moduleName) %> () {
-  return <><%= helpers.toPascalCase(moduleName) %> </>
+  console.log('page view: [<%= helpers.toPascalCase(moduleName) %>]')
+  return <h1><%= helpers.toPascalCase(moduleName) %></h1>
 }
 
 export const route = {

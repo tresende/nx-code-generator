@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "dev": "nx serve web",
+    "start": "nx serve web",
     "lint": "nx run-many -t lint --parallel=2 --skip-nx-cache"
   },
   "private": true,

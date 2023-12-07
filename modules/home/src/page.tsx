@@ -1,6 +1,7 @@
 // eslint-disable-next-line @nx/workspace/no-fc
 const Home: React.FunctionComponent<unknown> = () => {
-  return <>Home</>
+  console.log('page view: [Home]')
+  return <h1>Home</h1>
 }
 
 export const route = {
