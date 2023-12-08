@@ -14,5 +14,5 @@ export default async (tree: Tree, options: RawSchema) => {
   addModuleImport(tree, normalizedOptions)
 
   await formatFiles(tree)
-  printSuccessfullyCreatedModuleMessage({ withModulePermissionsMessage: true })
+  printSuccessfullyCreatedModuleMessage()
 }
