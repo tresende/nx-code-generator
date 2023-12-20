@@ -1,6 +1,6 @@
 import { logger } from '@nx/devkit'
 
-export const printSuccessfullyCreatedModuleMessage = (}) => {
+export const printSuccessfullyCreatedModuleMessage = () => {
   logger.info('\n🍪 Successfully created module!\n')
   logger.log(`🐨 💬 Before starting to create new features:\n`)
   logger.log(`    🍎 run "yarn lint --fix"`)
